@@ -141,9 +141,9 @@
 #### Helps in writing compact code
 <br>
 
-### **Week-2 Example**
+### **Week-2 Coding**
+![Week-2 Example and Labs](https://github.com/cssamLabs/Coursera-ServerSide-Javascript-with-NodeJS/tree/Week-2)
 
-### **Week-2 Practices**
 
 <br>
 
