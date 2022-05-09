@@ -122,4 +122,31 @@
 ## Week -2
 ### Context Setting
 
+#### **Modularize**
+#### Creating functions and making functionalities
+
+<br>
+
+### **Filter, Transfor, and Aggragate data using Array**
+#### **Array Operations**
+#### Aggregation: reduce()
+#### Traversal: forEach()
+#### Modification: map(), filter(), slice()
+#### Removal: pop(), shift(), splice()
+#### Insertion: push(), unshift()
+#### Search: find(), indexOf()
+
+### **Chaining Array**
+#### Call many methods in a single statement make the code more concise
+#### Provides an output of one function as an input to another function
+#### Helps in writing compact code
+<br>
+
+### **Week-2 Example**
+
+### **Week-2 Practices**
+
+<br>
+
+
 
