@@ -112,9 +112,8 @@
 #### for...of
 <br>
 
-### **Week-1 Example**
-
-### **Week-1 Practices**
+### **Week-1 Coding**
+![Week-1 Examples and Labs](https://github.com/cssamLabs/Coursera-ServerSide-Javascript-with-NodeJS/tree/Week-1)
 
 <br>
 <br>
