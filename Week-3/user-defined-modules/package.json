@@ -1,0 +1,13 @@
+{
+  "name": "user-defined-modules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Chandima Samaraweera",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
