@@ -15,18 +15,17 @@ const csv = require('csv-parser')
 //and second the callback
 const readFileContents = async(fileName, cb) => {
   try {
-    fs.readdir()
-    if(await !fs.existsSync(fileName)){
+    if(!fs.existsSync(fileName)){
       cb("Encountered error while reading file contents..!", null);
     } else {
       let fileContents = [];
 
-      const readableStream = await fs.createReadStream(fileName);
-      await readableStream.on("error", (err) => {
+      const readableStream = fs.createReadStream(fileName);
+      readableStream.on("error", (err) => {
         console.log("Error while reading contents of file using streams, ERROR::", err);
         cb("Encountered error while reading file contents..!", null);
       })
-      const rl = await readline.createInterface({
+      const rl = readline.createInterface({
         input: readableStream,
         output: process.stdout,
         terminal: false
@@ -36,7 +35,7 @@ const readFileContents = async(fileName, cb) => {
         fileContents.push(line)
       })
   
-      await setTimeout(()=>{
+      setTimeout(()=>{
         fileContents.splice(0, 1)// remove column name
         console.log('fileContents size: ', fileContents.length)
         rl.close();
@@ -64,10 +63,10 @@ const sortDataOnPrice = async(fileContents, cb) => {
       }
     })
     //console.log('filteredData: ', filteredData)
-    filteredData = await lodash.compact(filteredData)
-    let sortedData = await lodash.sortBy(filteredData, ['retail_price'])
+    filteredData = lodash.compact(filteredData)
+    let sortedData = lodash.sortBy(filteredData, ['retail_price'])
     
-    await setTimeout(()=>{
+    setTimeout(()=>{
       //console.log('sortedData - price: ', sortedData)
       cb(null, sortedData);
     }, 1000)
@@ -93,8 +92,8 @@ const sortDataOnRating = async(fileContents, cb) => {
       }
     })
     //use lodash sortBy() and compact() if required
-    filteredData = await lodash.compact(filteredData)
-    let sortedData = await lodash.sortBy(filteredData, ['product_rating'])
+    filteredData = lodash.compact(filteredData)
+    let sortedData = lodash.sortBy(filteredData, ['product_rating'])
 
     setTimeout(()=>{
       //use lodash.reverse() if required
