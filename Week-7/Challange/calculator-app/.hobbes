@@ -1,0 +1,9 @@
+{
+  "workflow": "NodeJSModuleApp",
+  "scores":
+  {
+    "commanderTests": 60,
+    "cadetTests": 35,
+    "eslint": 5
+  }
+}
